@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memStyle.css">
+    <title>Admin Page</title>
+</head>
+<body>      
+    <h1>Registered Users:</h1>
+
+    <a href="/reg">Register Yourself</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% regs.forEach(reg => { %>
+                <tr>
+                    <td><%= reg.name %></td>
+                    <td><%= reg.age %></td>
+                    <td><%= reg.gender %></td>
+                    <td><%= reg.email %></td>
+                    <td><%= reg.address %></td>
+                    <td><a href=/edit/<%= reg._id %>>Edit User</a><a href=/delete/<%= reg._id %>>Delete User</a></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    
+</body>
+</html>

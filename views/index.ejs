@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/indStyle.css">
+
+    <title>Create your Account</title>
+  </head>
+  <body>
+    <h1>Register Yourself</h1>
+
+    <form action="/reg" method="POST">
+      <p>Name</p>
+      <input type="text" name="mName" required />
+
+      <p>Age</p>
+      <input type="number" name="uAge" required />
+
+      <P>Gender</P>
+      <p id="info">(Male or Female)</p>
+      <input type="text" name="uGen" required />
+
+      <p>Email Address</p>
+      <input type="email" name="uEmail" required />
+
+      <p>Current Address</p>
+      <input type="text" name="uAddy" required />
+        <br>
+        <br>
+      <button type="submit">Create Account</button>
+    </form>
+    <br>
+    <br>
+
+    <a href="/">Created Accounts</a>
+  </body>
+</html>
+
+
+
